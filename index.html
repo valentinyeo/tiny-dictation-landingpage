@@ -344,6 +344,88 @@
             border: 1px solid rgba(34, 197, 94, 0.3);
         }
 
+        /* Comparison */
+        .comparison {
+            padding: 80px 0;
+        }
+
+        .comparison h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .comparison-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 48px;
+        }
+
+        .comparison-chart {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .comparison-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 16px;
+        }
+
+        .comparison-label {
+            width: 140px;
+            flex-shrink: 0;
+            font-size: 0.95rem;
+        }
+
+        .comparison-label.highlight {
+            color: #4ade80;
+            font-weight: 600;
+        }
+
+        .bar-container {
+            flex: 1;
+            height: 32px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bar {
+            height: 100%;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .bar.tiny {
+            width: 2%;
+            min-width: 50px;
+            background: linear-gradient(135deg, #4ade80, #22c55e);
+        }
+
+        .bar.competitor {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+
+        .bar.competitor-1 { width: 60%; }
+        .bar.competitor-2 { width: 80%; }
+        .bar.competitor-3 { width: 100%; }
+
+        .comparison-note {
+            text-align: center;
+            margin-top: 32px;
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
         /* How it works */
         .how-it-works {
             padding: 80px 0;
@@ -610,6 +692,40 @@
                         <img src="screenshot-shortcuts.png" alt="Tiny Dictation Shortcuts">
                     </a>
                 </div>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <div class="container">
+                <h2>Size Matters</h2>
+                <p class="comparison-subtitle">Less bloat = faster launch, less RAM, more disk space for you.</p>
+                <div class="comparison-chart">
+                    <div class="comparison-bar">
+                        <span class="comparison-label highlight">Tiny Dictation</span>
+                        <div class="bar-container">
+                            <div class="bar tiny">5 MB</div>
+                        </div>
+                    </div>
+                    <div class="comparison-bar">
+                        <span class="comparison-label">Whisper Transcription</span>
+                        <div class="bar-container">
+                            <div class="bar competitor competitor-1">150 MB</div>
+                        </div>
+                    </div>
+                    <div class="comparison-bar">
+                        <span class="comparison-label">Dragon Dictation</span>
+                        <div class="bar-container">
+                            <div class="bar competitor competitor-2">200 MB</div>
+                        </div>
+                    </div>
+                    <div class="comparison-bar">
+                        <span class="comparison-label">Otter.ai Desktop</span>
+                        <div class="bar-container">
+                            <div class="bar competitor competitor-3">250 MB+</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="comparison-note">Tiny Dictation uses cloud AI — no massive models eating your RAM.</p>
             </div>
         </section>
 
