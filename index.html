@@ -225,6 +225,32 @@
             margin: 0 auto 40px;
         }
 
+        .hero-points {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin: 0 0 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-points li {
+            color: var(--text-light);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-points li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #4ade80;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
         .download-btn {
             display: inline-flex;
             align-items: center;
@@ -663,7 +689,11 @@
             <div class="container">
                 <div class="size-badge">Just 5 MB</div>
                 <h1>Ultra-lightweight, low-latency<br>dictation for Windows.</h1>
-                <p>Windows dictation is okay. Whisper AI is better. But apps like Dragon and Otter are 200+ MB of bloat. Tiny Dictation gives you Whisper-quality transcription in a 5 MB app. No animations, no accounts, no nonsense.</p>
+                <ul class="hero-points">
+                    <li>Whisper-quality transcription in a 5 MB app</li>
+                    <li>Your API keys = you control the cost</li>
+                    <li>No account, no cloud, no bloat</li>
+                </ul>
                 <div class="hero-buttons">
                     <a href="pricing.html" class="download-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
