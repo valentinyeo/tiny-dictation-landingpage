@@ -452,6 +452,69 @@
             font-size: 0.875rem;
         }
 
+        /* Supported APIs */
+        .supported-apis {
+            padding: 80px 0;
+            background: var(--bg-alt);
+        }
+
+        .supported-apis h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .supported-apis-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 48px;
+        }
+
+        .api-list {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            padding: 24px 32px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .api-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .api-item:last-child {
+            border-bottom: none;
+        }
+
+        .api-name {
+            width: 120px;
+            font-weight: 500;
+            flex-shrink: 0;
+        }
+
+        .api-key-display {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .api-dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .api-item:nth-child(1) .api-dot { background: #22c55e; }
+        .api-item:nth-child(2) .api-dot { background: #f97316; }
+        .api-item:nth-child(3) .api-dot { background: #3b82f6; }
+        .api-item:nth-child(4) .api-dot { background: #a855f7; }
+
         /* How it works */
         .how-it-works {
             padding: 80px 0;
@@ -756,6 +819,39 @@
                     </div>
                 </div>
                 <p class="comparison-note">Tiny Dictation uses cloud AI — no massive models eating your RAM.</p>
+            </div>
+        </section>
+
+        <section class="supported-apis">
+            <div class="container">
+                <h2>Bring Your Own API Key</h2>
+                <p class="supported-apis-subtitle">Choose your preferred transcription provider. You control the cost.</p>
+                <div class="api-list">
+                    <div class="api-item">
+                        <span class="api-name">OpenAI</span>
+                        <div class="api-key-display">
+                            <span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span>
+                        </div>
+                    </div>
+                    <div class="api-item">
+                        <span class="api-name">Groq</span>
+                        <div class="api-key-display">
+                            <span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span>
+                        </div>
+                    </div>
+                    <div class="api-item">
+                        <span class="api-name">Deepgram</span>
+                        <div class="api-key-display">
+                            <span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span>
+                        </div>
+                    </div>
+                    <div class="api-item">
+                        <span class="api-name">AssemblyAI</span>
+                        <div class="api-key-display">
+                            <span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span><span class="api-dot"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
